@@ -1,0 +1,9 @@
+C:\Users\LaZZe\source\repos\Test\Test\bin\Release\Test.exe.config
+C:\Users\LaZZe\source\repos\Test\Test\bin\Release\Test.exe
+C:\Users\LaZZe\source\repos\Test\Test\bin\Release\Test.pdb
+C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.Form1.resources
+C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.Properties.Resources.resources
+C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.csproj.GenerateResource.cache
+C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.csproj.CoreCompileInputs.cache
+C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.exe
+C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.pdb
