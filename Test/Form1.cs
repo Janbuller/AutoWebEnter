@@ -18,14 +18,16 @@ namespace Test
         private bool Click = false;
 
         [DllImport("user32.dll")]
+
         static extern bool SetForegroundWindow(IntPtr hWnd);
+
+        System.Timers.Timer aTimer = new System.Timers.Timer();
 
         public Form1()
         {
             InitializeComponent();
-            System.Timers.Timer aTimer = new System.Timers.Timer();
             aTimer.Elapsed += new ElapsedEventHandler(ClickTest);
-            aTimer.Interval = 500;
+            aTimer.Interval = 10;
             aTimer.Enabled = true;
         }
 
@@ -52,12 +54,15 @@ namespace Test
             Process[] p = Process.GetProcessesByName(processName);
 
             // Activate the first application we find with this name
-            if (p.Count() > 0)
-                for (int i = 0; i < p.Length; i++)
+            foreach (Process Browser in p)
+            {
+                if (Browser.MainWindowHandle != IntPtr.Zero)
                 {
-                    SetForegroundWindow(p[i].MainWindowHandle);
+                    SetForegroundWindow(Browser.MainWindowHandle);
                     SendKeys.SendWait("{ENTER}");
+                    aTimer.Interval = 1200 + RandomNumber(-150, 150);
                 }
+            }
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -68,6 +73,12 @@ namespace Test
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        public int RandomNumber(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max);
         }
     }
 }

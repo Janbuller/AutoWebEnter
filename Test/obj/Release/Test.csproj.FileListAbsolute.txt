@@ -7,3 +7,4 @@ C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.csproj.GenerateResource.c
 C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.csproj.CoreCompileInputs.cache
 C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.exe
 C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.pdb
+C:\Users\LaZZe\source\repos\Test\Test\obj\Release\Test.csprojAssemblyReference.cache

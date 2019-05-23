@@ -7,3 +7,4 @@ C:\Users\LaZZe\source\repos\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.ca
 C:\Users\LaZZe\source\repos\Test\Test\obj\Debug\Test.exe
 C:\Users\LaZZe\source\repos\Test\Test\obj\Debug\Test.pdb
 C:\Users\LaZZe\source\repos\Test\Test\obj\Debug\Test.Form1.resources
+C:\Users\LaZZe\source\repos\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache
